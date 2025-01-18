@@ -3,7 +3,7 @@ import navLinks from "../constants/index.js";
 
 const NavItems = ({ onClick }) => {
   return (
-    <ul className="flex flex-col items-center gap-4 sm:flex-row md:gap-14 relative z-20">
+    <ul className="flex flex-col items-center gap-4 sm:flex-row  relative z-20">
       {navLinks.map(({ id, href, name }) => (
         <li
           key={id}

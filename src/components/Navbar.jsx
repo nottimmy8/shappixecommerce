@@ -3,7 +3,9 @@ import { IoMenu, IoClose } from "react-icons/io5";
 import NavItems from "../Data/Navitems";
 import { IoMdSearch } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
-import { BsCartDash } from "react-icons/bs";
+import logo from "../materials/logo&name.png";
+import carticon from "../materials/shopping-cart.png";
+import user from "../materials/user.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -31,7 +33,7 @@ const Navbar = () => {
           {/* LOGO  */}
           <div>
             {" "}
-            <h1 className="font-bold text-2xl ">SAPPHIX</h1>
+            <img src={logo} alt="" className=" w-44 h-12" />
           </div>
 
           {/* NAVLISTITEMS  */}
@@ -50,23 +52,23 @@ const Navbar = () => {
           </div>
 
           {/* right side */}
-          <div className=" flex space-x-4">
+          <div className="  flex space-x-4">
             {/* profile */}
-            <div className=" flex">
-              <CgProfile size={25} className="text-black" />
-              <div className=" hidden sm:block">Account</div>
+            <div className="relative group flex gap-2">
+              <img src={user} alt="" className="w-6 h-6" />
+              <div className=" hidden  lg:block">Account</div>
             </div>
 
             {/* cart */}
-            <div className="  flex">
+            <div className="  flex gap-2">
               <div className="relative group block">
-                <BsCartDash size={25} />
+                <img src={carticon} alt="" className="w-6 h-6" />
 
-                <span className=" px-2    text-sm text-white rounded-full bg-red-600 absolute -right-3 -top-3  ">
+                <span className=" px-2 py-0     text-sm text-white rounded-full bg-secondary absolute -right-3 -top-2  ">
                   0
                 </span>
               </div>
-              <div className=" hidden sm:block">Cart</div>
+              <div className=" hidden lg:block">Cart</div>
             </div>
           </div>
         </div>

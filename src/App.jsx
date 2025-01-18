@@ -11,14 +11,18 @@ import Testimonial from "./components/Testimonial";
 import Scan from "./components/scan";
 import Address from "./components/Address";
 import Footer from "./components/Footer";
-import Shop from "./components/Shop";
+import Shopcategories from "./components/Shopcategories";
+import Login from "./components/Login";
+import Shopjewelry from "./components/shopjewelry";
 
 const App = () => {
   return (
     <div>
       {" "}
+      {/* <Login /> */}
       <Navbar />
-      <Shop />
+      {/* <Shopcategories /> */}
+      <Shopjewelry />
       {/* <Hero />
       <Topselect />
       <Newarrival />
@@ -29,7 +33,8 @@ const App = () => {
       <Testimonial />
       <Scan />
       <Address />
-      <Footer /> */}
+     */}
+      <Footer />
     </div>
   );
 };
